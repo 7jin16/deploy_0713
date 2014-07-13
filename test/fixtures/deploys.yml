@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ^: MyString
+  tag: MyText
+  create: 2014-07-13 16:51:39
+  migration: MyText
+
+two:
+  ^: MyString
+  tag: MyText
+  create: 2014-07-13 16:51:39
+  migration: MyText

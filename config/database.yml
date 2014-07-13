@@ -14,11 +14,11 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
-  socket: /tmp/mysql.sock
+  password: 
 
 development:
   <<: *default
+  socket: /tmp/mysql.sock
   database: deploy_0713_development
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: deploy_0713_test
+  database: deploy_0713_development
+  username: deploy0713
+  password: 0713
+  host: 127.0.0.1
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
